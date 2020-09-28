@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/example.css">
+    <link rel="stylesheet" href="/mymodal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Josefin Sans', Geneva, Tahoma, sans-serif;
+            background-image: url(https://previews.123rf.com/images/sdecoret/sdecoret1703/sdecoret170300858/74082295-floating-white-and-blue-glowing-dot-network-on-black-background-3d-rendering.jpg);
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+        <a class="navbar-brand" href="/boostrap_example.html">
+            <img src="./img/portfolio/logo.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+        </a>
+        <a href="./gallery.html" class="text-white btn btn-outline-secondary">Gallery
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-images" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M12.002 4h-10a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1zm-10-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-10zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                <path fill-rule="evenodd" d="M4 2h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1z"/>
+              </svg></a>
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="./family.html" class="text-white btn btn-outline-secondary">Family
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+              </svg></a>
+        <a href="./hobbies.html" class="text-white btn btn-outline-secondary">Hobbies
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-stopwatch-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16 7 7 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+              </svg></a>
+        <a onclick="scrollWin()" class="text-white btn btn-outline-secondary">Contact
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+              </svg></a>
+    </nav>
+
+    <div class="col-md-12 about title text-center">
+        <h2 id="gallery" class=" badge-dark pb-3" onclick="alertMe()">
+            Gallery
+        </h2>
+
+        <div class="card-columns display-container">
+            <div class="card">
+                <img src="./img/strong/1.jpg" class="card-img-top meal-image" alt="quarantine" id="strong1" onclick="openModal('strong1')">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/strong/2.jpg" class="card-img-top" alt="xddd" id="strong2" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/strong/3.jpg" class="card-img-top" alt="...." id="strong3" onclick="openModal();currentSlide(2)">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/bruh moments/bruh 1.jpg" class="card-img-top" alt="bruh " id="bruh1" onclick="openModal();currentSlide(3)">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/bruh moments/bruh 2.jpg" class="card-img-top" alt="bruh " id="bruh2" onclick="openModal();currentSlide(4)">
+                <div class="card-body">
+                    <h5 class="card-title">When you accidentally eat the most disgusting food in the entire restaurant</h5>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/bruh moments/bruh 3.jpg" class="card-img-top" alt="bruh" id="bruh3" onclick="openModal();currentSlide(5)">
+
+                <div class="card-body">
+                    <h5 class="card-title">when you try to be cool when someone is filming you</h5>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio/IMG_20200812_181132.jpg" class="card-img-top" alt="my self" id="myself" onclick="openModal('myself');">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">nothing just my self<small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio/bold.jpg" class="card-img-top" alt="two bolds" id="two balds" onclick="openModal('two balds');">
+                <div class="card-body">
+                    <h5 class="card-title">two balds xd</h5>
+                    <p class="card-text">This picture was taken in 2015,and stand next to me is my sister. in this picture i was 12 years old.<small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio/koktobe 2015.jpg" class="card-img-top" alt="koktobe 2015" id="koktobe 2015" onclick="openModal('koktobe 2015');">
+                <div class="card-body">
+                    <h5 class="card-title">First time in koktobe</h5>
+                    <p class="card-text">This picture was taken in 2015. Me and my family came to almaty for the holiday before we moved here.<small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio/uncle.jpg" class="card-img-top" alt="uncle" id="uncle" onclick="openModal('uncle');">
+                <div class="card-body">
+                    <h5 class="card-title">With my uncle</h5>
+                    <p class="card-text">At this time i came to almaty like 1 year, and this man stand next to me is my uncle, this picture was taken in 2017<small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio/with sis.jpg" class="card-img-top" alt="with sis" id="sis" onclick="zoom('sis');">
+                <div class="card-body">
+                    <h5 class="card-title">with my sister</h5>
+                    <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/portfolio/almaty 2014.jpg" class="card-img-top" alt="almaty 2014" id="almaty 2014" onclick="zoom('almaty 2014');">
+                <div class="card-body">
+                    <h5 class="card-title">almaty 2014</h5>
+                    <p class="card-text">This picture was taken in 2014 and that is our First time in almaty<small class="text-muted"></small></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal();">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="/img/strong/1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="/img/strong/2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="/img/strong/3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="/img/bruh moments/bruh 1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="/img/bruh moments/bruh 2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="/img/bruh moments/bruh 3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="/img/portfolio/IMG_20200812_181132.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="/img/portfolio/bold.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="/img/portfolio/koktobe 2015.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="/img/portfolio/uncle.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="/img/portfolio/with sis.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="/img/portfolio/almaty 2014.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-3 m-3 bg-dark text-white text-center" class="d-flex flex-column">
+            <a href="https://www.facebook.com/yesbol.yerlan.7/" class="fa fa-facebook fa-2x  justify-content-between align-items-center flex-column"></a>
+            <a href="https://www.instagram.com/y.yesbol" class="fa fa-instagram fa-2x  justify-content-between align-items-center flex-column"></a>
+            <a href="https://www.youtube.com/channel/UCMX_FWWr6oAcSj-MZvqYYvw?view_as=subscriber" class="fa fa-youtube fa-2x mr-auto justify-content-center align-items-center flex-column"></a>
+            <div class="d-flex flex-column flex-row call-area">
+                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
+                <div class="call-now">
+                    <a href="#" class="text-uppercase h4 font-roboto " class="d-flex align-items-center justify-content-center flex-column">call-now (+7)-747-237-6086</a>
+                    <div class=" bg dark text-white text-center">Address:Kazakhstan Almaty, Abay 130</div>
+                    <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
+                </div>
+            </div>
+        </div>
+        <script src="/mymodal.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
