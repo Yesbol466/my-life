@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "navbar navbar-dark bg-dark mb-3") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar navbar-dark bg-dark mb-3v";
+    }
+}
+
 function alertMe() {
     document.getElementById("gallery").style.backgroundColor = "red";
 }
