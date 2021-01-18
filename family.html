@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/example.css">
+    <link rel="stylesheet" href="/example.css">
     <link rel="stylesheet" href="/mymodal.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
 
@@ -49,7 +49,7 @@
         </h2>
         <div class="card-columns">
             <div class="card">
-                <img src="./img/portfolio/bold.jpg" class="card-img-top" alt="..." id="bold" onclick="openModal('bold');">
+                <img src="./img/portfolio/bold.jpg" class="card-img-top" alt="..." id="bold" onclick="openModal('bold');currentSlide(1)">
                 <div class="card-body">
                     <h5 class="card-title">two balds xd</h5>
                     <p class="card-text">This picture was taken in 2015,and stand next to me is my sister. in this picture i was 12 years old.</p>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/portfolio/koktobe 2015.jpg" class="card-img-top" alt="..." id="koktobe 2015" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                <img src="./img/portfolio/koktobe 2015.jpg" class="card-img-top" alt="..." id="koktobe 2015" onclick="openModal('koktobe 2015');currentSlide(2)" class="hover-shadow cursor">
                 <div class="card-body">
                     <h5 class="card-title">First time in koktobe</h5>
                     <p class="card-text">This picture was taken in 2015. Me and my family came to almaty for the holiday before we moved here.</p>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/portfolio/uncle.jpg" class="card-img-top" alt="..." id="uncle" onclick="openModal();currentSlide(2)">
+                <img src="./img/portfolio/uncle.jpg" class="card-img-top" alt="..." id="uncle" onclick="openModal('uncle');currentSlide(3)">
                 <div class="card-body">
                     <h5 class="card-title">With my uncle</h5>
                     <p class="card-text">At this time i came to almaty like 1 year, and this man stand next to me is my uncle, this picture was taken in 2017</p>
@@ -73,28 +73,28 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/portfolio/with sis.jpg" class="card-img-top" alt="..." id="sis" onclick="openModal();currentSlide(2)">
+                <img src="./img/portfolio/with sis.jpg" class="card-img-top" alt="..." id="sis" onclick="openModal('sis');currentSlide(4)">
                 <div class="card-body">
                     <h5 class="card-title">with my sister</h5>
                     <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/portfolio/family selfie(1).jpg" class="card-img-top" alt="..." id="family" onclick="openModal();currentSlide(2)">
+                <img src="./img/portfolio/family selfie(1).jpg" class="card-img-top" alt="..." id="family" onclick="openModal('family');currentSlide(5)">
                 <div class="card-body">
                     <h5 class="card-title">A family selfie XD</h5>
                     <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/bro.jpg" class="card-img-top" alt="..." id="bro" onclick="openModal();currentSlide(2)">
+                <img src="./img/bro.jpg" class="card-img-top" alt="..." id="bro" onclick="openModal('bro');currentSlide(6)">
                 <div class="card-body">
                     <h5 class="card-title">First time at APORT</h5>
                     <p class="card-text">In this photo i was 12 and it was my first time at Almaty. My brother Merey brought me to APORT(a big shopping center)<small class="text-muted"></small></p>
                 </div>
             </div>
             <div class="card">
-                <img src="./img/pop.jpg" class="card-img-top" alt="..." id="pop" onclick="openModal();currentSlide(2)">
+                <img src="./img/pop.jpg" class="card-img-top" alt="..." id="pop" onclick="openModal('pop');currentSlide(7)">
                 <div class="card-body">
                     <h5 class="card-title">With my dad</h5>
                     <p class="card-text">This man next to me is my dad, and this picture was taken in 2017. That was first time back to china after i moved here<small class="text-muted"></small></p>
@@ -146,10 +146,10 @@
 
             </div>
         </div>
-        <div class="p-3 m-3 bg-dark text-white text-center" class="d-flex flex-column">
-            <a href="https://www.facebook.com/yesbol.yerlan.7/" class="fa fa-facebook fa-2x  justify-content-between align-items-center flex-column"></a>
-            <a href="https://www.instagram.com/y.yesbol" class="fa fa-instagram fa-2x  justify-content-between align-items-center flex-column"></a>
-            <a href="https://www.youtube.com/channel/UCMX_FWWr6oAcSj-MZvqYYvw?view_as=subscriber" class="fa fa-youtube fa-2x mr-auto justify-content-center align-items-center flex-column"></a>
+        <div class="p-3 m-3 bg-dark text-white text-center" class="d-flex flex-column flex-row">
+            <a href="https://www.facebook.com/yesbol.yerlan.7/" class="fa fa-facebook fa-2x   align-items-center flex-column"></a>
+            <a href="https://www.instagram.com/y.yesbol" class="fa fa-instagram fa-2x   align-items-center flex-column"></a>
+            <a href="https://www.youtube.com/channel/UCMX_FWWr6oAcSj-MZvqYYvw?view_as=subscriber" class="fa fa-youtube fa-2x align-items-center flex-column"></a>
             <div class="d-flex flex-column flex-row call-area">
                 <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
                 <div class="call-now">
